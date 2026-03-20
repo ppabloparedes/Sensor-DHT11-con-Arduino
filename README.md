@@ -43,20 +43,16 @@ void loop() {
 ```
 
 ## 🔧 Componentes Necesarios
-- **Arduino UNO** - Microcontrolador principal
-- **Sensor DHT11** - Sensor de temperatura y humedad (rango: 0-50°C, 20-95% humedad relativa)
-- **Resistencia de 4.7k Ω** - Para el circuito pullup (opcional, algunos módulos DHT11 ya la incluyen)
-- **Cables de conexión (Jumper)** - Para conectar los componentes
-- **Protoboard** - Para realizar las conexiones (Opcional)
-- **Cable USB** - Para programar el Arduino y monitorear los datos
+- Arduino UNO + Cable USB
+- Sensor DHT11
+- Cables de conexión (Jumper)
+- Protoboard (Opcional)
 
 ## 📌 Conexiones
 El sensor DHT11 se conecta al Arduino mediante:
-- **VCC (Rojo)**: +5V del Arduino
-- **GND (Negro)**: GND del Arduino
-- **DATA (Amarillo)**: Pin digital 2 del Arduino (configurable en el código)
-
-**Nota importante:** Si el módulo DHT11 no incluye la resistencia de pullup integrada, conecta una resistencia de 4.7k Ω entre VCC y DATA.
+- **VCC**: +5V del Arduino
+- **GND**: GND del Arduino
+- **DATA**: Pin digital 2 del Arduino (configurable en el código)
 
 ## 💡 Cómo Utilizar
 
@@ -73,7 +69,6 @@ El sensor DHT11 se conecta al Arduino mediante:
    - VCC del DHT11 a +5V del Arduino
    - GND del DHT11 a GND del Arduino
    - DATA del DHT11 al pin 2 del Arduino
-3. Si es necesario, coloca la resistencia de 4.7k Ω entre VCC y DATA
 
 ### Paso 3: Cargar el Código
 1. Copia el código Arduino proporcionado
@@ -119,7 +114,7 @@ El sensor DHT11 se conecta al Arduino mediante:
 ### Problema: No reconoce la librería DHT
 **Soluciones:**
 - Abre **Sketch** → **Incluir librerías** → **Administrar librerías**
-- Busca "DHT" nuevamente y verifica que esté instalada
+- Busca "DHT" nuevamente y verifica que esté instalada y sea de Adafruit
 - Si no está, instálala
 - Reinicia Arduino IDE después de instalar
 
@@ -131,11 +126,11 @@ El sensor DHT11 se conecta al Arduino mediante:
 - Presiona el botón de **Reset** en el Arduino y luego carga el código rápidamente
 
 ## 📊 Características del DHT11
-- **Rango de temperatura:** 0°C a 50°C (±2°C de precisión)
-- **Rango de humedad:** 20% a 95% (±5% de precisión)
-- **Voltaje de operación:** 3.3V a 5.5V
-- **Corriente de consumo:** 0.5mA a 2.5mA
-- **Tiempo de lectura:** 1-2 segundos
+- **Rango de temperatura:** 0 °C a 50 °C (±2 °C)
+- **Rango de humedad:** 20% a 90% (±5%)
+- **Voltaje de operación:** 3,3 V a 5 V
+- **Corriente de consumo:** 0,5 mA a 2,5 mA
+- **Tiempo de lectura:** 2 segundos (Configurado en el programa)
 
 ## 💡 Notas Adicionales
 - El sensor DHT11 necesita tiempo para estabilizarse, por eso el delay de 2 segundos
