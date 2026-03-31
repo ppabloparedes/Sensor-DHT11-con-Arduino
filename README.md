@@ -5,6 +5,7 @@ Este proyecto utiliza un sensor de temperatura y humedad DHT11 con Arduino IDE p
 
 ## 📸 Diagrama de Conexión
 ![Diagrama de conexión](Diagrama%20de%20conexi%C3%B3n.png)
+![Diagrama de conexión](Diagrama%20de%20conexi%C3%B3n%202.png).
 
 ## 💻 Código Arduino
 
