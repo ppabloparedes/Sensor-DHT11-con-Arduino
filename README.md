@@ -12,7 +12,7 @@ Este proyecto utiliza un sensor de temperatura y humedad DHT11 con Arduino IDE p
 ```cpp
 #include <DHT.h>
 
-#define DHTPIN 2
+#define DHTPIN 3
 #define DHTTYPE DHT11
 
 DHT dht(DHTPIN, DHTTYPE);
@@ -53,7 +53,7 @@ void loop() {
 El sensor DHT11 se conecta al Arduino mediante:
 - **VCC**: +5V del Arduino
 - **GND**: GND del Arduino
-- **DATA**: Pin digital 2 del Arduino (configurable en el código)
+- **DATA**: Pin digital 3 del Arduino (configurable en el código)
 
 ## 💡 Cómo Utilizar
 
@@ -69,7 +69,7 @@ El sensor DHT11 se conecta al Arduino mediante:
 2. Conecta los cables según el diagrama:
    - VCC del DHT11 a +5V del Arduino
    - GND del DHT11 a GND del Arduino
-   - DATA del DHT11 al pin 2 del Arduino
+   - DATA del DHT11 al pin 3 del Arduino
 
 ### Paso 3: Cargar el Código
 1. Copia el código Arduino proporcionado
@@ -100,8 +100,8 @@ El sensor DHT11 se conecta al Arduino mediante:
 ### Problema: Mensaje de error "Error al leer el sensor DHT11"
 **Soluciones:**
 - Revisa que todas las conexiones estén firmes
-- Asegúrate de que el pin DATA del sensor esté conectado al **pin 2** del Arduino
-- Intenta cambiar el pin (por ejemplo, a pin 3) y actualiza `#define DHTPIN 2` en el código
+- Asegúrate de que el pin DATA del sensor esté conectado al **pin 3** del Arduino
+- Intenta cambiar el pin (por ejemplo, a pin 2) y actualiza `#define DHTPIN 2` en el código
 - Verifica que la librería DHT esté correctamente instalada
 - Intenta desconectar y reconectar el Arduino
 
